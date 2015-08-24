@@ -1,0 +1,174 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "variables";
+@import "mixin";
+@import "compass/css3";
+@import "compass/support";
+@import "compass/css3/selection";
+@import "compass/css3/text-shadow";
+@import "compass/css3/animation";
+
+@import "compass/typography/links";
+@import "compass/typography/lists";
+@import "compass/typography/text";
+@import "compass/typography/vertical_rhythm";
+
+@import "compass/utilities/color";
+@import "compass/utilities/print";
+@import "compass/utilities/tables";
+@import "compass/utilities/general";
+$supported-browsers:chrome,firefox,ie,opera;
+
+$browser-minimum-versions:("ie":"6");
+
+
+@include print-utilities(screen);
+
+
+.headline{
+	font-family:$headline-ff;
+}
+
+.main-sec{
+	font-family:$main-sec-ff;
+	.headline{
+		font:{
+			family:$headline-ff;
+			size:16px;
+		}
+	}
+	.detail{
+		font-size:12px;
+
+	}
+}
+
+
+// div{
+// 	// @include appearance('button');
+// 	@include selection {
+// 	  background: #fe57a1;
+// 	  color: #fff;
+// 	}
+// 	@include box-shadow(1px 2px 3px 4px #cfcecf); 
+// 	@include text-shadow(1px 2px 3px #000);
+// }
+
+p{
+	color:hsl(270, 100%, 50%);
+}
+a{
+	// @include hover-link();
+	// @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+	@include unstyled-link();
+}
+.webdemo-sec{
+	@include col-sm(50%);
+
+	
+
+	&:hover{
+		background-color: #f5f5f5;
+	}
+}
+
+.error.instrusion{
+	background-image:url('/image/bg.png');
+}
+
+.error{
+	color:#f00;
+}
+
+.serious-error{
+	@extend .error;
+	border:1px solid #f00;
+}
+
+// .list-unstyled{
+// 	@include no-bullets();
+// }
+
+// .list-unstyled-li{
+// 	@include no-bullet();
+// }
+
+// .list-inline{
+// 	@include inline-list();
+// }
+
+.list-horizontal{
+	@include horizontal-list();
+}
+
+.list-inline-block{
+	@include inline-block-list();
+}
+
+.text-force-wrap{
+	@include force-wrap();
+}
+
+.text-no-wrap{
+	@include nowrap();
+}
+$use-mozilla-ellipsis-binding: true;
+
+.text-ellipsis{
+	@include ellipsis;
+}
+
+.text-hide{
+	// @include hide-text();
+	@include squish-text();
+}
+
+//http://cdn.qq.com/images.find-btn.png
+
+.btn-find{
+	@include replace-text("http://cdn.qq.com/images.find-btn.png");
+}
+
+$base-font-size:16px;
+
+$base-line-height:24px;
+
+.good-price{
+	$table-color:#7a98c6;
+	@include outer-table-borders();
+	@include inner-table-borders(1px,darken($table-color, 50%));
+
+	@include table-scaffolding();
+	@include alternating-rows-and-columns($table-color,adjust-hue($table-color,-120deg),#222222);
+}
+
+.clearfix{
+	@include clearfix;
+	@include legacy-pie-clearfix();
+}
+
+.pull-left{
+	@include float-left();
+}
+
+// @debug omitted-usage("ie","6");
+
+//开启ie的has-layout属性
+.need-has-layout{
+	@include has-layout();
+}
+
+.underscore-hack-display{
+	@include underscore-hack(display,display,inline) ;
+}
+
+.test-min-height{
+	@include min-height(10px);
+}
+
+.tag-cloud-container{
+	@include tag-cloud(24px);
+}

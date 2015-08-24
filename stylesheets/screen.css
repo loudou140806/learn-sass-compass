@@ -1,0 +1,329 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 15, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/_print.scss */
+.print-only {
+  display: none;
+}
+
+/* line 31, ../sass/screen.scss */
+.headline {
+  font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
+}
+
+/* line 35, ../sass/screen.scss */
+.main-sec {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+/* line 37, ../sass/screen.scss */
+.main-sec .headline {
+  font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/* line 43, ../sass/screen.scss */
+.main-sec .detail {
+  font-size: 12px;
+}
+
+/* line 60, ../sass/screen.scss */
+p {
+  color: #8000ff;
+}
+
+/* line 63, ../sass/screen.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  /* line 68, ../sass/screen.scss */
+  .webdemo-sec {
+    width: 50%;
+    float: left;
+  }
+}
+/* line 73, ../sass/screen.scss */
+.webdemo-sec:hover {
+  background-color: #f5f5f5;
+}
+
+/* line 78, ../sass/screen.scss */
+.error.instrusion, .instrusion.serious-error {
+  background-image: url("/image/bg.png");
+}
+
+/* line 82, ../sass/screen.scss */
+.error, .serious-error {
+  color: #f00;
+}
+
+/* line 86, ../sass/screen.scss */
+.serious-error {
+  border: 1px solid #f00;
+}
+
+/* line 103, ../sass/screen.scss */
+.list-horizontal {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 62, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  display: inline;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 49, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li:first-child, .list-horizontal li.first {
+  padding-left: 0;
+}
+/* line 50, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li:last-child {
+  padding-right: 0;
+}
+/* line 52, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li.last {
+  padding-right: 0;
+}
+
+/* line 107, ../sass/screen.scss */
+.list-inline-block {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 49, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+.list-inline-block li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+}
+
+/* line 111, ../sass/screen.scss */
+.text-force-wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 115, ../sass/screen.scss */
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+/* line 120, ../sass/screen.scss */
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('/stylesheets/xml/ellipsis.xml#ellipsis');
+}
+
+/* line 124, ../sass/screen.scss */
+.text-hide {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* line 131, ../sass/screen.scss */
+.btn-find {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(http://cdn.qq.com/images.find-btn.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* line 139, ../sass/screen.scss */
+.good-price {
+  border: 2px solid black;
+}
+/* line 6, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price thead th {
+  border-bottom: 2px solid black;
+}
+/* line 9, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price tfoot th, .good-price tfoot td {
+  border-top: 2px solid black;
+}
+/* line 12, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price th:first-child, .good-price th.first {
+  border-right: 2px solid black;
+}
+/* line 16, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price th, .good-price td {
+  border-right: 1px solid #141e2e;
+  border-bottom: 1px solid #141e2e;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+/* line 22, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price th:last-child, .good-price td:last-child {
+  border-right-width: 0;
+}
+/* line 28, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price th.last, .good-price td.last {
+  border-right-width: 0;
+}
+/* line 33, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price tbody tr:last-child th, .good-price tbody tr:last-child td, .good-price tfoot tr:last-child th, .good-price tfoot tr:last-child td {
+  border-bottom-width: 0;
+}
+/* line 37, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.good-price tbody tr.last th, .good-price tbody tr.last td, .good-price tfoot tr.last th, .good-price tfoot tr.last td {
+  border-bottom-width: 0;
+}
+/* line 2, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.good-price th {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 5, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.good-price td,
+.good-price th {
+  padding: 2px;
+}
+/* line 8, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.good-price td.numeric,
+.good-price th.numeric {
+  text-align: right;
+}
+/* line 2, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price th {
+  background-color: white;
+}
+/* line 4, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price th.even, .good-price th:nth-child(2n) {
+  background-color: #dddddd;
+}
+/* line 8, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tr.odd td, .good-price tr:nth-child(2n+1) td {
+  background-color: #98c67a;
+}
+/* line 10, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tr.odd td.even, .good-price tr.odd td:nth-child(2n), .good-price tr:nth-child(2n+1) td.even, .good-price tr:nth-child(2n+1) td:nth-child(2n) {
+  background-color: #76a458;
+}
+/* line 14, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tr.even td {
+  background-color: #7a98c6;
+}
+/* line 16, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tr.even td.even, .good-price tr.even td:nth-child(2n) {
+  background-color: #5876a4;
+}
+/* line 19, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tfoot th, .good-price tfoot td {
+  background-color: white;
+}
+/* line 21, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.good-price tfoot th.even, .good-price tfoot th:nth-child(2n), .good-price tfoot td.even, .good-price tfoot td:nth-child(2n) {
+  background-color: #dddddd;
+}
+
+/* line 148, ../sass/screen.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+  *zoom: 1;
+}
+/* line 22, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 153, ../sass/screen.scss */
+.pull-left {
+  float: left;
+  display: inline;
+}
+
+/* line 160, ../sass/screen.scss */
+.need-has-layout {
+  *zoom: 1;
+}
+
+/* line 164, ../sass/screen.scss */
+.underscore-hack-display {
+  display: display;
+  _display: inline;
+}
+
+/* line 168, ../sass/screen.scss */
+.test-min-height {
+  min-height: 10px;
+  height: auto;
+  _height: 10px;
+}
+
+/* line 172, ../sass/screen.scss */
+.tag-cloud-container {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+/* line 5, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .xxs, .tag-cloud-container .xs, .tag-cloud-container .s, .tag-cloud-container .l, .tag-cloud-container .xl, .tag-cloud-container .xxl {
+  line-height: 28.8px;
+}
+/* line 7, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .xxs {
+  font-size: 12px;
+}
+/* line 9, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .xs {
+  font-size: 16px;
+}
+/* line 11, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .s {
+  font-size: 18px;
+}
+/* line 13, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .l {
+  font-size: 32px;
+}
+/* line 15, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .xl {
+  font-size: 36px;
+}
+/* line 17, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_tag-cloud.scss */
+.tag-cloud-container .xxl {
+  font-size: 48px;
+}

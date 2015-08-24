@@ -1,0 +1,7 @@
+@import "compass/utilities/sprites";
+
+$logo-sprites-dimensions:true;//是否根据图片的大小添加宽高
+$disable-magic-sprite-selectors:true;
+@import "icon/*.png";
+
+@include all-icon-sprites();
