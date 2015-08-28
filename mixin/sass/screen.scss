@@ -7,7 +7,7 @@
 @import "normalize";
 @import "compass";
 
-
+//加载字体文件
 @font-face {
     font-family: 'neues_bauenregular';
     src: url('../fonts/neues_bauen-webfont.eot');
@@ -18,19 +18,9 @@
          url('../fonts/neues_bauen-webfont.svg#neues_bauenregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-@include keyframes(scale){
-	0% {
-	transform: scale(1);
-	}
-	50% {
-	transform: scale(2);
-	}
-	100% {
-	transform: scale(1);
-	}
-};
+
+
 html{
 	padding:0;
 }
@@ -47,9 +37,64 @@ html,body{
 .logo{
 	font-family:'neues_bauenregular';
 }
-nav.fixed-nav{
-	
+div.fixed-nav{
+	background:#fff none repeat scroll 0 0 ;
+	@include box-shadow(0 0 0.5em 1px #ece4cd);
+	height:100%;
+	left:0;
+	overflow:auto;
+	position:fixed;
+	top:0;
+	width:280px;
 }
+.social{
+	@include legacy-pie-clearfix();//清浮动
+	background-color:#f47a33;
+	@include background-image(linear-gradient(#f47a33, #f26234));
+	margin-top:0;
+	padding:0.25em 4em;
+	li{
+		@include float-left();
+		display: inline-block;
+		width: calc(100%/3);
+		a{
+			display: block;
+		    height: 25px;
+		    margin: 0 auto;
+		    overflow: hidden;
+		    width: 25px;
+		    @include unstyled-link();//无样式a标签
+		    @include squish-text();
+
+		}
+		// a:before{
+		// 	content:'';
+		// 	display: block;
+		// 	height: 100%;
+		// 	width: 0;
+		// }
+	}
+}
+
+.github,.twitter,.gitter,{
+	@include replace-text('social-icons.svg');
+}
+h1.logo{
+	@include with-prefix(' ');
+}
+//animation中的keyframes
+@include keyframes(scale){
+	0% {
+	transform: scale(1);
+	}
+	50% {
+	transform: scale(2);
+	}
+	100% {
+	transform: scale(1);
+	}
+};
+
 @include keyframes(slide){
 	0% {
 	    left: 0;
